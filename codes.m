@@ -7,7 +7,7 @@ ylpf=imfilter(org_image,fspecial('average',[3 3]));
 figure
 imshow(ylpf);
 title('output of low pass filter');
-% Histogram esitlemede imgenin 2 boyutlu olmasý beklenir.Imge üç boyutlu
+% Histogram esitlemede imgenin 2 boyutlu olmasÃ½ beklenir.Imge Ã¼Ã§ boyutlu
 % oldugu icin ilk once grayscale'e cevirdik
 grey_img=rgb2gray(org_image);
 img_histeq=histeq(grey_img);
@@ -31,7 +31,7 @@ imshow(bw_img);
 imagen = bwareaopen(bw_img,30);
 figure
 imshow(~imagen);
-%ara rapor sonrasý
+%ara rapor sonrasÃ½
 
 [L, Ne]=bwlabel(imagen);%Ne=, nesne tespit edildi
 %% Measure properties of image regions
